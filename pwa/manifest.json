@@ -1,0 +1,38 @@
+{
+  "name": "pwa app",
+  "short_name": "pwa",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "yellowgreen",
+  "theme_color": "#202022",
+  "description": "description for the app",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://cdn.glitch.me/dd302d4b-8c18-4dd4-9099-dce25c1a914a%2Ficon-72x72.png",
+      "type": "image/png",
+      "sizes": "72x72" 
+    },
+    {
+      "src": "https://cdn.glitch.me/dd302d4b-8c18-4dd4-9099-dce25c1a914a%2Ficon-128x128.png",
+      "type": "image/png",
+      "sizes": "128x128" 
+    },
+    {
+      "src": "https://cdn.glitch.me/dd302d4b-8c18-4dd4-9099-dce25c1a914a%2Ficon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://cdn.glitch.global/67303337-6c75-471a-ba97-16c7e2e0fcb4/icon-maskable-196x196.png",
+      "type": "image/png",
+      "sizes": "196x196",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://cdn.glitch.me/dd302d4b-8c18-4dd4-9099-dce25c1a914a%2Ficon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512" 
+    }
+  ]
+}
