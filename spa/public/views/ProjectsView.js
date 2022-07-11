@@ -7,6 +7,6 @@ export default class extends AbstractView {
   }
 
   async getHtml(){
-    return ``;
+    return `<p>Projects view</p>`;
   }
 }
