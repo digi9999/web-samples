@@ -1,12 +1,9 @@
 import Home from "./views/HomeView.js";
 import Projects from "./views/ProjectsView.js";
 
-const navigateTo = url => {
-  history.pushState(null,null,url);
-  router();
-};
-const router = async ()=>{
-  
+const navigateTo = url => {history.pushState(null,null,url);router();};
+
+const router = async ()=>{  
   const routes = [
     { path: "/", view: Home },
     { path: "/projects", view: Projects }
@@ -18,6 +15,7 @@ const router = async ()=>{
       isMatch: location.pathname === route.path
     };
   });
+  
   let match = potentialMatches.find(potentialMatch => potentialMatch.isMatch);
   
   if (!match) {
@@ -29,9 +27,9 @@ const router = async ()=>{
   console.log(match);
   const view = new match.route.view();
   
-  if (match.route.path != "/"){
+  // if (match.route.path != "/"){
     document.querySelector("#app").innerHTML = await view.getHtml();
-  }
+  // }
 };
 
 window.addEventListener("popstate", router);
