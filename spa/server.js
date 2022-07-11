@@ -6,7 +6,7 @@ fastify.register(require("fastify-static"), {root: path.join(__dirname, "public"
 
 
 fastify.get("*" , async (req, reply) => {  
-  const stream = fs.readFileSync(__dirname+'/src/pages/index.html');
+  const stream = fs.readFileSync(__dirname+'/index.html');
   reply.type('text/html').send(stream)
 });
 
